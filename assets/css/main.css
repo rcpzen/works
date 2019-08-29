@@ -2,10 +2,10 @@ body {
   background-color: #d8d8d8;
 }
 
-.flickity-prev-next-button{
-    width: 34px;
-    height: 34px;
-    border: 4px solid #d8d8d8;
+.flickity-prev-next-button {
+  width: 34px;
+  height: 34px;
+  border: 4px solid #d8d8d8;
 }
 header {
   position: fixed;
@@ -165,10 +165,60 @@ a.tile-wrapper-link .tile-text {
   font-size: 14px;
 }
 
+.product-wrapper-link {
+  color: inherit;
+}
+.product-wrapper-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.product-card {
+  position: relative;
+  padding: 10px;
+}
+.product-card img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 135px;
+}
+.product {
+  position: relative;
+  padding-left: 155px;
+  min-height: 82px;
+}
+
+.price-box > .basket {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+.product-card:hover{
+  background-color: hsl(0, 0%, 93%);
+}
+.product-card:hover .price-box {
+padding-right: 47px;
+}
+.product-card:hover .price-box > .basket {
+  display: block;
+}
+
+.show-more{
+  display: block;
+  position: relative;
+  margin: 8px auto;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
 @media (min-width: 1120px) {
-    .carousel-cell a {
-        width: 1096px;
-    }
+  .carousel-cell a {
+    width: 1096px;
+  }
 }
 @media (min-width: 768px) {
   .carousel-area {

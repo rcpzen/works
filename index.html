@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/flickity.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -404,6 +406,52 @@
                                     </div>
                                 </div>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h6>Discover Game</h6>
+            <hr>
+            <div id="discover">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <a href="#" class="product-wrapper-link" v-for="product in products">
+                            <div class="product-card">
+                                <img src="./assets/img/product.jpg" alt="">
+                                <div class="product d-flex flex-column justify-content-between">
+                                    <h6>{{product.company.catchPhrase}}</h6>
+                                    <div class="price-area d-flex align-items-center justify-content-between">
+                                        <span><i class="fab fa-apple"></i></span>
+                                        <div class="d-flex align-items-center position-relative price-box">
+                                            <span>${{product.id}}</span>
+                                            <button class="basket ml-2">
+                                                <i class="fas fa-shopping-basket"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="show-more mx-auto">Show more</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 px-0">
+                        <img class="img-fluid mb-1" src="./assets/img/sideimage.jpg" alt="">
+                        <div class="row mx-0">
+                            <div class="col-6 pl-0 pr-1">
+                                <img class="img-fluid mb-1" src="./assets/img/sideimage2.jpg" alt="">
+                                <img class="img-fluid mb-1" src="./assets/img/sideimage2.jpg" alt="">
+                            </div>
+                            <div class="col-6 px-0">
+                                <img class="img-fluid mb-1" src="./assets/img/sideimage3.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-0 pr-1">
+                                <img class="img-fluid mb-1" src="./assets/img/sideimage2.jpg" alt="">
+                            </div>
+                            <div class="col-6 px-0">
+                                <img class="img-fluid mb-1" src="./assets/img/sideimage2.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
